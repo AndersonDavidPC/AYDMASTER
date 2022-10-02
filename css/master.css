@@ -1,0 +1,157 @@
+:root{
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #191919;
+  --light-gray: #F4F2F2;
+  --xsm: 1rem;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  --xg: 2.8rem;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
+}
+body{
+  background-color: var(--black);
+}
+header{
+  background-color: var(--dark-gray);
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  padding: 72px 0 120px 0;
+}
+h1{
+  font-size: var(--xg);
+  color: var(--light-gray);
+}
+h2, h3{
+  font-size: var(--lg);
+  color: var(--light-gray);
+}
+h4, h5{
+  font-size: var(--md);
+  color: var(--light-gray);
+}
+p{
+  font-size: var(--sm);
+  color: var(--light-gray);
+}
+span{
+  font-size: var(--xsm);
+  color: var(--white);
+}
+.section-header{
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.info-container{
+  margin: 30px 20px;
+}
+.title-name{
+  color: var(--light-gray);
+  margin-bottom: 10px;
+}
+.sub-name{
+  color: var(--white);
+  font-size: var(--md);
+}
+.profile-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.profile-pic img{
+  border-radius: 50%;
+  border: solid 5px var(--white);
+}
+.name-container{
+  margin-left: 30px;
+}
+.line{
+  border-bottom: solid 1px var(--white);
+  margin-bottom: 10px;
+  width: 180px;
+  height: 10px;
+}
+.exp-container{
+  margin: 40px 20px;
+}
+.workexp-container, .studyexp-container{
+  margin-top: 20px;
+}
+.contact-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-item a{
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 5px;
+}
+footer{
+  background-image:url("../assets/enjambrenegro.png");
+  background-size: contain;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer-container{
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container img{
+  margin: 0 20px;
+}
+@media (min-width: 640px){
+
+}
+@media (min-width: 900px){
+  .section-header{
+    display: flex;
+    justify-content: center;
+  }
+  .info-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .exp-container{
+    display: flex;
+    justify-content: center;
+  }
+  .workexp-container{
+    border-right: solid 1px var(--white);
+    padding-right: 20px;
+    margin-right: 10px;
+  }
+  .studyexp-container{
+    border-left: solid 1px var(--white);
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+}
